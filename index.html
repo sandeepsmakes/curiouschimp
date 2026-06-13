@@ -92,47 +92,34 @@
       <div class="card card-dark">
         <h3>Ashrayam</h3>
         <svg class="scene scene-ashrayam" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-          <!-- Floor -->
-          <line x1="5" y1="93" x2="195" y2="93" stroke="#444" stroke-width="1"/>
-          <!-- Agent A (left) — active -->
+          <!-- Triangle edges (dashed) -->
+          <line x1="97" y1="34" x2="76" y2="72" stroke="#2a2a2a" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <line x1="103" y1="34" x2="124" y2="72" stroke="#2a2a2a" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <line x1="80" y1="78" x2="120" y2="78" stroke="#2a2a2a" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <!-- Agent A — top apex (flat-top hex, Claude orange) -->
           <g class="agent agent-a">
-            <line x1="30" y1="32" x2="30" y2="27" stroke="#aaa" stroke-width="1.2"/>
-            <circle cx="30" cy="26" r="2.5" fill="#aaa"/>
-            <circle cx="30" cy="42" r="7" fill="none" stroke="#ddd" stroke-width="1.5"/>
-            <line x1="30" y1="49" x2="30" y2="67" stroke="#ddd" stroke-width="1.5"/>
-            <line x1="30" y1="55" x2="20" y2="63" stroke="#ddd" stroke-width="1.5"/>
-            <line x1="30" y1="55" x2="40" y2="63" stroke="#ddd" stroke-width="1.5"/>
-            <line x1="30" y1="67" x2="22" y2="86" stroke="#ddd" stroke-width="1.5"/>
-            <line x1="30" y1="67" x2="38" y2="86" stroke="#ddd" stroke-width="1.5"/>
+            <polygon points="107,28 104,22 96,22 93,28 96,34 104,34" fill="#111" stroke="#d4784a" stroke-width="1.5"/>
+            <circle cx="97.5" cy="27" r="1.4" fill="#d4784a"/>
+            <circle cx="102.5" cy="27" r="1.4" fill="#d4784a"/>
           </g>
-          <!-- Agent B (middle) -->
+          <!-- Agent B — bottom-left -->
           <g class="agent agent-b">
-            <line x1="100" y1="32" x2="100" y2="27" stroke="#555" stroke-width="1.2"/>
-            <circle cx="100" cy="26" r="2.5" fill="#555"/>
-            <circle cx="100" cy="42" r="7" fill="none" stroke="#555" stroke-width="1.5"/>
-            <line x1="100" y1="49" x2="100" y2="67" stroke="#555" stroke-width="1.5"/>
-            <line x1="100" y1="55" x2="90"  y2="63" stroke="#555" stroke-width="1.5"/>
-            <line x1="100" y1="55" x2="110" y2="63" stroke="#555" stroke-width="1.5"/>
-            <line x1="100" y1="67" x2="92"  y2="86" stroke="#555" stroke-width="1.5"/>
-            <line x1="100" y1="67" x2="108" y2="86" stroke="#555" stroke-width="1.5"/>
+            <polygon points="80,78 77,72 70,72 66,78 70,84 77,84" fill="#111" stroke="#d4784a" stroke-width="1.5"/>
+            <circle cx="70.5" cy="77" r="1.4" fill="#d4784a"/>
+            <circle cx="75.5" cy="77" r="1.4" fill="#d4784a"/>
           </g>
-          <!-- Agent C (right) -->
+          <!-- Agent C — bottom-right -->
           <g class="agent agent-c">
-            <line x1="170" y1="32" x2="170" y2="27" stroke="#555" stroke-width="1.2"/>
-            <circle cx="170" cy="26" r="2.5" fill="#555"/>
-            <circle cx="170" cy="42" r="7" fill="none" stroke="#555" stroke-width="1.5"/>
-            <line x1="170" y1="49" x2="170" y2="67" stroke="#555" stroke-width="1.5"/>
-            <line x1="170" y1="55" x2="160" y2="63" stroke="#555" stroke-width="1.5"/>
-            <line x1="170" y1="55" x2="180" y2="63" stroke="#555" stroke-width="1.5"/>
-            <line x1="170" y1="67" x2="162" y2="86" stroke="#555" stroke-width="1.5"/>
-            <line x1="170" y1="67" x2="178" y2="86" stroke="#555" stroke-width="1.5"/>
+            <polygon points="134,78 131,72 124,72 120,78 124,84 131,84" fill="#111" stroke="#d4784a" stroke-width="1.5"/>
+            <circle cx="124.5" cy="77" r="1.4" fill="#d4784a"/>
+            <circle cx="129.5" cy="77" r="1.4" fill="#d4784a"/>
           </g>
-          <!-- Document being relayed -->
+          <!-- Document relayed around the triangle -->
           <g class="doc-pass">
-            <rect x="-8" y="-11" width="16" height="20" rx="1" fill="#1a1a1a" stroke="#999" stroke-width="1.5"/>
-            <line x1="-4" y1="-6" x2="4"  y2="-6" stroke="#777" stroke-width="1"/>
-            <line x1="-4" y1="-2" x2="4"  y2="-2" stroke="#777" stroke-width="1"/>
-            <line x1="-4" y1="2"  x2="2"  y2="2"  stroke="#777" stroke-width="1"/>
+            <rect x="-6" y="-8" width="12" height="14" rx="1" fill="#1a1a1a" stroke="#888" stroke-width="1.2"/>
+            <line x1="-3" y1="-4" x2="3" y2="-4" stroke="#666" stroke-width="0.8"/>
+            <line x1="-3" y1="-1" x2="3" y2="-1" stroke="#666" stroke-width="0.8"/>
+            <line x1="-3" y1="2"  x2="1"  y2="2"  stroke="#666" stroke-width="0.8"/>
           </g>
         </svg>
         <p>AI-powered public grievance processing system. Smart routing, real-time tracking, automated updates.</p>

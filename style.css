@@ -334,22 +334,23 @@ footer {
   to   { transform: rotate(-55deg); }
 }
 
-/* --- Ashrayam: agent document relay (loops) --- */
+/* --- Ashrayam: triangle agent relay (loops A→B→C→A) --- */
 .doc-pass {
-  animation: doc-relay 5s ease-in-out infinite paused;
+  animation: doc-triangle 5s ease-in-out infinite paused;
 }
 .scene-ashrayam.play .doc-pass { animation-play-state: running; }
 
-@keyframes doc-relay {
-  0%        { transform: translate(30px, 57px); opacity: 0; }
-  5%        { transform: translate(30px, 57px); opacity: 1; }
-  18%       { transform: translate(30px, 57px); }
-  32%       { transform: translate(100px, 57px); }
-  52%       { transform: translate(100px, 57px); }
-  67%       { transform: translate(170px, 57px); }
-  87%       { transform: translate(170px, 57px); opacity: 1; }
-  93%       { transform: translate(170px, 57px); opacity: 0; }
-  100%      { transform: translate(30px, 57px);  opacity: 0; }
+@keyframes doc-triangle {
+  0%        { transform: translate(100px, 28px); opacity: 0; }
+  5%        { transform: translate(100px, 28px); opacity: 1; }
+  15%       { transform: translate(100px, 28px); }
+  30%       { transform: translate(73px,  78px); }
+  40%       { transform: translate(73px,  78px); }
+  55%       { transform: translate(127px, 78px); }
+  65%       { transform: translate(127px, 78px); }
+  80%       { transform: translate(100px, 28px); opacity: 1; }
+  90%       { transform: translate(100px, 28px); opacity: 0; }
+  100%      { transform: translate(100px, 28px); opacity: 0; }
 }
 
 .agent-a { animation: relay-a 5s ease-in-out infinite paused; }
@@ -361,21 +362,24 @@ footer {
 .scene-ashrayam.play .agent-c { animation-play-state: running; }
 
 @keyframes relay-a {
-  0%        { opacity: 0.3; }
+  0%        { opacity: 0.2; }
   5%        { opacity: 1; }
-  18%       { opacity: 1; }
-  32%       { opacity: 0.3; }
-  100%      { opacity: 0.3; }
+  15%       { opacity: 1; }
+  30%       { opacity: 0.2; }
+  65%       { opacity: 0.2; }
+  80%       { opacity: 1; }
+  90%       { opacity: 0.2; }
+  100%      { opacity: 0.2; }
 }
 @keyframes relay-b {
-  0%, 27%   { opacity: 0.3; }
-  37%, 52%  { opacity: 1; }
-  62%       { opacity: 0.3; }
-  100%      { opacity: 0.3; }
+  0%, 25%   { opacity: 0.2; }
+  35%, 40%  { opacity: 1; }
+  55%       { opacity: 0.2; }
+  100%      { opacity: 0.2; }
 }
 @keyframes relay-c {
-  0%, 60%   { opacity: 0.3; }
-  70%, 87%  { opacity: 1; }
-  93%       { opacity: 0.3; }
-  100%      { opacity: 0.3; }
+  0%, 48%   { opacity: 0.2; }
+  58%, 65%  { opacity: 1; }
+  78%       { opacity: 0.2; }
+  100%      { opacity: 0.2; }
 }
