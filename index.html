@@ -59,11 +59,82 @@
     <div class="grid">
       <div class="card card-dark">
         <h3>Medi'Q'</h3>
+        <svg class="scene scene-mediq" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Floor -->
+          <line x1="5" y1="93" x2="195" y2="93" stroke="#444" stroke-width="1"/>
+          <!-- Door frame -->
+          <rect x="10" y="38" width="32" height="55" fill="none" stroke="#555" stroke-width="1.5" rx="1"/>
+          <circle cx="37" cy="68" r="2" fill="#666"/>
+          <!-- Desk -->
+          <rect x="110" y="65" width="65" height="8" rx="1" fill="#222" stroke="#4a4a4a" stroke-width="1"/>
+          <line x1="114" y1="73" x2="114" y2="93" stroke="#444" stroke-width="1.5"/>
+          <line x1="171" y1="73" x2="171" y2="93" stroke="#444" stroke-width="1.5"/>
+          <!-- Doctor (static, seated behind desk) -->
+          <circle cx="145" cy="43" r="7" fill="none" stroke="#888" stroke-width="1.5"/>
+          <line x1="145" y1="50" x2="145" y2="65" stroke="#888" stroke-width="1.5"/>
+          <line x1="145" y1="56" x2="133" y2="63" stroke="#888" stroke-width="1.5"/>
+          <path class="doc-wave" d="M 145 56 L 157 63" stroke="#888" stroke-width="1.5" fill="none"/>
+          <!-- Patient (animated walk-in) -->
+          <g class="patient-walk">
+            <g class="patient-bob">
+              <circle cx="0" cy="50" r="7" fill="none" stroke="#ddd" stroke-width="1.5"/>
+              <line x1="0" y1="57" x2="0" y2="74" stroke="#ddd" stroke-width="1.5"/>
+              <path class="arm-l" d="M 0 63 L -9 73" stroke="#ddd" stroke-width="1.5" fill="none"/>
+              <path class="arm-r" d="M 0 63 L 9 73"  stroke="#ddd" stroke-width="1.5" fill="none"/>
+              <path class="leg-l" d="M 0 74 L -7 93" stroke="#ddd" stroke-width="1.5" fill="none"/>
+              <path class="leg-r" d="M 0 74 L 7 93"  stroke="#ddd" stroke-width="1.5" fill="none"/>
+            </g>
+          </g>
+        </svg>
         <p>Doctor appointment and queue management app. Connecting patients with the right doctor, faster.</p>
         <span class="tag">In Progress</span>
       </div>
       <div class="card card-dark">
         <h3>Ashrayam</h3>
+        <svg class="scene scene-ashrayam" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Floor -->
+          <line x1="5" y1="93" x2="195" y2="93" stroke="#444" stroke-width="1"/>
+          <!-- Agent A (left) — active -->
+          <g class="agent agent-a">
+            <line x1="30" y1="32" x2="30" y2="27" stroke="#aaa" stroke-width="1.2"/>
+            <circle cx="30" cy="26" r="2.5" fill="#aaa"/>
+            <circle cx="30" cy="42" r="7" fill="none" stroke="#ddd" stroke-width="1.5"/>
+            <line x1="30" y1="49" x2="30" y2="67" stroke="#ddd" stroke-width="1.5"/>
+            <line x1="30" y1="55" x2="20" y2="63" stroke="#ddd" stroke-width="1.5"/>
+            <line x1="30" y1="55" x2="40" y2="63" stroke="#ddd" stroke-width="1.5"/>
+            <line x1="30" y1="67" x2="22" y2="86" stroke="#ddd" stroke-width="1.5"/>
+            <line x1="30" y1="67" x2="38" y2="86" stroke="#ddd" stroke-width="1.5"/>
+          </g>
+          <!-- Agent B (middle) -->
+          <g class="agent agent-b">
+            <line x1="100" y1="32" x2="100" y2="27" stroke="#555" stroke-width="1.2"/>
+            <circle cx="100" cy="26" r="2.5" fill="#555"/>
+            <circle cx="100" cy="42" r="7" fill="none" stroke="#555" stroke-width="1.5"/>
+            <line x1="100" y1="49" x2="100" y2="67" stroke="#555" stroke-width="1.5"/>
+            <line x1="100" y1="55" x2="90"  y2="63" stroke="#555" stroke-width="1.5"/>
+            <line x1="100" y1="55" x2="110" y2="63" stroke="#555" stroke-width="1.5"/>
+            <line x1="100" y1="67" x2="92"  y2="86" stroke="#555" stroke-width="1.5"/>
+            <line x1="100" y1="67" x2="108" y2="86" stroke="#555" stroke-width="1.5"/>
+          </g>
+          <!-- Agent C (right) -->
+          <g class="agent agent-c">
+            <line x1="170" y1="32" x2="170" y2="27" stroke="#555" stroke-width="1.2"/>
+            <circle cx="170" cy="26" r="2.5" fill="#555"/>
+            <circle cx="170" cy="42" r="7" fill="none" stroke="#555" stroke-width="1.5"/>
+            <line x1="170" y1="49" x2="170" y2="67" stroke="#555" stroke-width="1.5"/>
+            <line x1="170" y1="55" x2="160" y2="63" stroke="#555" stroke-width="1.5"/>
+            <line x1="170" y1="55" x2="180" y2="63" stroke="#555" stroke-width="1.5"/>
+            <line x1="170" y1="67" x2="162" y2="86" stroke="#555" stroke-width="1.5"/>
+            <line x1="170" y1="67" x2="178" y2="86" stroke="#555" stroke-width="1.5"/>
+          </g>
+          <!-- Document being relayed -->
+          <g class="doc-pass">
+            <rect x="-8" y="-11" width="16" height="20" rx="1" fill="#1a1a1a" stroke="#999" stroke-width="1.5"/>
+            <line x1="-4" y1="-6" x2="4"  y2="-6" stroke="#777" stroke-width="1"/>
+            <line x1="-4" y1="-2" x2="4"  y2="-2" stroke="#777" stroke-width="1"/>
+            <line x1="-4" y1="2"  x2="2"  y2="2"  stroke="#777" stroke-width="1"/>
+          </g>
+        </svg>
         <p>AI-powered public grievance processing system. Smart routing, real-time tracking, automated updates.</p>
         <span class="tag">In Progress</span>
       </div>
@@ -100,5 +171,25 @@
     <p>&copy; 2026 CuriousChimp &mdash; curiouschimp.in</p>
   </footer>
 
+  <script>
+    const sceneObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('play');
+          sceneObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    document.querySelectorAll('.scene-mediq, .scene-ashrayam').forEach(s => sceneObserver.observe(s));
+
+    const walkEl = document.querySelector('.patient-walk');
+    if (walkEl) {
+      walkEl.addEventListener('animationend', () => {
+        const scene = document.querySelector('.scene-mediq');
+        if (scene) scene.classList.add('arrived');
+      });
+    }
+  </script>
 </body>
 </html>
