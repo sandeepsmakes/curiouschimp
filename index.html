@@ -89,43 +89,7 @@
         <p>Doctor appointment and queue management app. Connecting patients with the right doctor, faster.</p>
         <span class="tag">In Progress</span>
       </div>
-      <div class="card card-dark">
-        <h3>Ashrayam</h3>
-        <svg class="scene scene-ashrayam" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-          <!-- Triangle edges (dashed) -->
-          <line x1="97" y1="34" x2="76" y2="72" stroke="#2a2a2a" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <line x1="103" y1="34" x2="124" y2="72" stroke="#2a2a2a" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <line x1="80" y1="78" x2="120" y2="78" stroke="#2a2a2a" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <!-- Agent A — top apex (flat-top hex, Claude orange) -->
-          <g class="agent agent-a">
-            <polygon points="107,28 104,22 96,22 93,28 96,34 104,34" fill="#111" stroke="#d4784a" stroke-width="1.5"/>
-            <circle cx="97.5" cy="27" r="1.4" fill="#d4784a"/>
-            <circle cx="102.5" cy="27" r="1.4" fill="#d4784a"/>
-          </g>
-          <!-- Agent B — bottom-left -->
-          <g class="agent agent-b">
-            <polygon points="80,78 77,72 70,72 66,78 70,84 77,84" fill="#111" stroke="#d4784a" stroke-width="1.5"/>
-            <circle cx="70.5" cy="77" r="1.4" fill="#d4784a"/>
-            <circle cx="75.5" cy="77" r="1.4" fill="#d4784a"/>
-          </g>
-          <!-- Agent C — bottom-right -->
-          <g class="agent agent-c">
-            <polygon points="134,78 131,72 124,72 120,78 124,84 131,84" fill="#111" stroke="#d4784a" stroke-width="1.5"/>
-            <circle cx="124.5" cy="77" r="1.4" fill="#d4784a"/>
-            <circle cx="129.5" cy="77" r="1.4" fill="#d4784a"/>
-          </g>
-          <!-- Document relayed around the triangle -->
-          <g class="doc-pass">
-            <rect x="-6" y="-8" width="12" height="14" rx="1" fill="#1a1a1a" stroke="#888" stroke-width="1.2"/>
-            <line x1="-3" y1="-4" x2="3" y2="-4" stroke="#666" stroke-width="0.8"/>
-            <line x1="-3" y1="-1" x2="3" y2="-1" stroke="#666" stroke-width="0.8"/>
-            <line x1="-3" y1="2"  x2="1"  y2="2"  stroke="#666" stroke-width="0.8"/>
-          </g>
-        </svg>
-        <p>AI-powered public grievance processing system. Smart routing, real-time tracking, automated updates.</p>
-        <span class="tag">In Progress</span>
-      </div>
-      <div class="card card-dark placeholder">
+<div class="card card-dark placeholder">
         <h3>More coming.</h3>
         <p>We're building. Check back soon.</p>
       </div>
@@ -168,7 +132,7 @@
       });
     }, { threshold: 0.4 });
 
-    document.querySelectorAll('.scene-mediq, .scene-ashrayam').forEach(s => sceneObserver.observe(s));
+    document.querySelectorAll('.scene-mediq').forEach(s => sceneObserver.observe(s));
 
     const walkEl = document.querySelector('.patient-walk');
     if (walkEl) {
