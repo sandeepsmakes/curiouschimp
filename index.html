@@ -109,10 +109,10 @@
   <section id="contact" class="section section-dark">
     <h2>Poke Us</h2>
     <p class="contact-sub">Got a project or just want to say hi?</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your name" required />
-      <input type="email" placeholder="Your email" required />
-      <textarea placeholder="What's on your mind?" rows="5" required></textarea>
+    <form class="contact-form" action="https://formspree.io/f/xpqgdjqz" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="What's on your mind?" rows="5" required></textarea>
       <button type="submit" class="btn-primary">Send</button>
     </form>
   </section>
