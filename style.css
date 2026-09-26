@@ -334,7 +334,18 @@ footer {
   to   { transform: rotate(-55deg); }
 }
 
-/* --- Triangle relay (loops A→B→C→A) — reused by Ashrayam and FixItNow --- */
+/* --- FixItNow: flowing connecting edges (marching dashes) --- */
+.edge-flow {
+  stroke-dasharray: 4, 3;
+  animation: edge-flow 0.7s linear infinite paused;
+}
+.scene.play .edge-flow { animation-play-state: running; }
+
+@keyframes edge-flow {
+  to { stroke-dashoffset: -14; }
+}
+
+/* --- Triangle relay (loops A→B→C→A) — used by Ashrayam --- */
 .doc-pass {
   animation: doc-triangle 5s ease-in-out infinite paused;
 }
