@@ -334,11 +334,11 @@ footer {
   to   { transform: rotate(-55deg); }
 }
 
-/* --- Ashrayam: triangle agent relay (loops A→B→C→A) --- */
+/* --- Triangle relay (loops A→B→C→A) — reused by Ashrayam and FixItNow --- */
 .doc-pass {
   animation: doc-triangle 5s ease-in-out infinite paused;
 }
-.scene-ashrayam.play .doc-pass { animation-play-state: running; }
+.scene.play .doc-pass { animation-play-state: running; }
 
 @keyframes doc-triangle {
   0%        { transform: translate(100px, 28px); opacity: 0; }
@@ -357,9 +357,9 @@ footer {
 .agent-b { animation: relay-b 5s ease-in-out infinite paused; }
 .agent-c { animation: relay-c 5s ease-in-out infinite paused; }
 
-.scene-ashrayam.play .agent-a,
-.scene-ashrayam.play .agent-b,
-.scene-ashrayam.play .agent-c { animation-play-state: running; }
+.scene.play .agent-a,
+.scene.play .agent-b,
+.scene.play .agent-c { animation-play-state: running; }
 
 @keyframes relay-a {
   0%        { opacity: 0.2; }
